@@ -6,7 +6,7 @@
 /*   By: rmontgom <rmontgom@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/03 14:27:38 by rmontgom          #+#    #+#             */
-/*   Updated: 2021/12/03 14:29:57 by rmontgom         ###   ########.fr       */
+/*   Updated: 2021/12/03 21:11:24 by rmontgom         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,8 @@
 
 char	*get_next_line(fd)
 {
+	char	*buf;
+
+	read(fd, &buf, BUFFER_SIZE);
 	
 }
